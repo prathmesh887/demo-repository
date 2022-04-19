@@ -9,7 +9,11 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: hadenlabs/action-pre-commit@0.2.0
-      with:
-        args: run --files
+      - name: toggle workflow command echoing
+        run: |
+          echo '::set-output name=action_echo::disabled'
+          echo '::echo::on'
+          echo '::set-output name=action_echo::enabled'
+          echo '::echo::off'
+          echo '::set-output name=action_echo::disabled'
+
