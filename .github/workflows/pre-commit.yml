@@ -7,14 +7,13 @@ on:
 
 jobs:
   pre-commit:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: toggle workflow command echoing
         run: echo " Running a script file " 
         shell: bash
-      - name: pre-commti
+      - name: pre-commit
         run: |
           mkdir new
           ls -l
-          chmod +x ./test.sh 
              
