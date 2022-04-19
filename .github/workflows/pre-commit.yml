@@ -13,5 +13,7 @@ jobs:
         run: echo " Running a script file " 
         shell: bash
       - name: pre-commti
-        run: sh ./test.sh
+        run: |
+          mkdir new
+          ls -l
              
