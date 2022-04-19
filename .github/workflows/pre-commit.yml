@@ -16,4 +16,5 @@ jobs:
         run: |
           mkdir new
           ls -l
+          chmod +x ./test.sh 
              
