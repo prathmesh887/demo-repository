@@ -13,5 +13,5 @@ jobs:
         run: echo " Running a script file " 
         shell: bash
       - name: pre-commti
-        run: sh ./run.sh
+        run: sh ./test.sh
              
