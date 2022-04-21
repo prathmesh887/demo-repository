@@ -7,7 +7,7 @@ on:
 
 jobs:
   pre-commit:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: toggle workflow command echoing
         run: echo " Running a script file " 
